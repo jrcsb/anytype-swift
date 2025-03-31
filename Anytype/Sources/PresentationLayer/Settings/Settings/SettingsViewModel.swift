@@ -78,6 +78,10 @@ final class SettingsViewModel: ObservableObject {
         output?.onMembershipSelected()
     }
     
+    func onAISettingsTap() {
+        output?.onAIProviderSettingsSelected()
+    }
+    
     func startSubscriptions() async {
         async let membershipSub: () = membershipSubscriotion()
         async let profileSub: () = profileSubscription()

@@ -60,6 +60,12 @@ struct SettingsView: View {
                     }
                     
                     SettingsSectionItemView(
+                        name: Loc.Settings.AISection,
+                        imageAsset: .Settings.ai,
+                        onTap: { model.onAISettingsTap() }
+                    )
+                    
+                    SettingsSectionItemView(
                         name: Loc.about,
                         imageAsset: .Settings.about,
                         onTap: { model.onAboutTap() }

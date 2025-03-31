@@ -900,6 +900,7 @@
 
 // MARK: - Settings
 "Settings.Title" = "Settings";
+"Settings.AISection" = "AI & Local Models";
 "Settings.SpaceName" = "Space name";
 "Settings.SpaceType" = "Space type";
 "Settings.VaultAndAccess" = "Vault and access";

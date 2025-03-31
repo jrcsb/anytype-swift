@@ -4,6 +4,9 @@ import Services
 protocol OllamaConfigBuilderProtocol {
     func makeOllamaConfig(model: String) -> AIProviderConfig
     func getAvailableModels() async throws -> [String]
+    func getModelRequirements(for model: String) -> (ram: Int, disk: Int)?
+    func getModelDescription(for model: String) -> String?
+    func recommendModel(for taskType: AITaskType) -> String
     var defaultModel: String { get }
 }
 

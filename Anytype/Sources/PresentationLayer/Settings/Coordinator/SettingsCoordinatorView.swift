@@ -47,6 +47,9 @@ struct SettingsCoordinatorView: View {
             .sheet(isPresented: $model.showMembership) {
                 MembershipCoordinator()
             }
+            .sheet(isPresented: $model.showAISettings) {
+                AIProviderSettingsView()
+            }
             .sheet(item: $model.objectIconPickerData) {
                 ObjectIconPicker(data: $0)
             }

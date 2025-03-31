@@ -25,6 +25,7 @@ final class SettingsCoordinatorViewModel: ObservableObject,
     @Published var showMembership = false
     @Published var showKeychainPhraseForSettings = false
     @Published var objectIconPickerData: ObjectIconPickerData?
+    @Published var showAISettings = false
     
     // MARK: - SettingsModuleOutput
     
@@ -55,6 +56,10 @@ final class SettingsCoordinatorViewModel: ObservableObject,
     
     func onSpacesSelected() {
         showSpaceManager = true
+    }
+    
+    func onAIProviderSettingsSelected() {
+        showAISettings = true
     }
     
     func onMembershipSelected() {
