@@ -8,6 +8,7 @@ final class AppConfigurator {
         EnvironmentConfiguration(),
         AppVersionTrackerConfigurator(),
         NonFatalAlertConfigurator(),
+        AIAutomationConfigurator(),
         MiddlewareMerticsConfigurator(),
         MiddlewareHandlerConfigurator(),
         SentryConfigurator(),

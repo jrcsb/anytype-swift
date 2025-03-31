@@ -8,7 +8,31 @@ import AnytypeCore
 import AppTarget
 
 extension Container {
-        
+    
+    var aiAgentSwarmService: Factory<any AIAgentSwarmServiceProtocol> {
+        self { AIAgentSwarmService() }.shared
+    }
+    
+    var ollamaConfigBuilder: Factory<any OllamaConfigBuilderProtocol> {
+        self { OllamaConfigBuilder() }.shared
+    }
+    
+    var localModelManager: Factory<any LocalModelManagerProtocol> {
+        self { LocalModelManager() }.shared
+    }
+    
+    var aiAutoConfigTrigger: Factory<AIAutoConfigurationTrigger> {
+        self { AIAutoConfigurationTrigger() }.shared
+    }
+    
+    var aiAutomationService: Factory<any AIAutomationServiceProtocol> {
+        self { AIAutomationService() }.shared
+    }
+    
+    var aiAgentSwarmCoordinator: Factory<any AIAgentSwarmCoordinatorProtocol> {
+        self { AIAgentSwarmCoordinator() }.shared
+    }
+    
     var accountManager: Factory<any AccountManagerProtocol> {
         self { AccountManager() }.singleton
     }
